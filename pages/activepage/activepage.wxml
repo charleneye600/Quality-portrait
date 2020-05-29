@@ -1,0 +1,5 @@
+<!--pages/activepage/activepage.wxml-->
+<text>
+本页面的id:{{id}}
+本页面的uid:{{uid}}
+</text>

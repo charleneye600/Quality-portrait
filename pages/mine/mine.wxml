@@ -1,0 +1,33 @@
+<!--pages/mine/mine.wxml-->
+<view>
+	<view class="bg">
+		<view class="userAvatar">
+			<open-data type="userAvatarUrl"></open-data>
+		</view>
+		<h3>用户</h3>
+		<h4>
+			<open-data type="userNickName"></open-data>
+		</h4>
+	</view>
+
+
+	<view class="nav">
+		<navigator wx:for="{{mune}}" url="{{item.url}}">
+			<view class="nav-item">
+				<view class="icon">
+					<image src="{{item.icon}}"></image>
+				</view>
+			</view>
+			<view class="title">
+				{{item.title}}
+			</view>
+		</navigator>
+	</view>
+
+	<block wx:for="{{vancell}}">
+		<view class="van">
+			<van-cell icon="{{item.icon}}" title="{{item.title}}" is-link/>
+		</view>
+	</block>
+
+</view>

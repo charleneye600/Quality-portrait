@@ -1,0 +1,35 @@
+/* pages/socre/socre.wxss */
+.score-container{
+  margin:20rpx;
+}
+.card-container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.card{
+  width:30%;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 2rpx #cccccc;
+  margin:15rpx 0;
+}
+.name{
+  width:100%;
+  text-align: center;
+  padding-bottom:10rpx;
+
+}
+.img{
+  height:190rpx;
+}
+.cardimg{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+}
+.name{
+  font-size:82%;
+}
+.menuTitle{
+  color:#0081ff
+}

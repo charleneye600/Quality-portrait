@@ -1,0 +1,5 @@
+<!--pages/share/share.wxml-->
+<image src="/static/prcode.png" class="img"/>
+<view id="save">
+	<van-button type="primary" block bindtap="saveImg">保存</van-button>
+</view>

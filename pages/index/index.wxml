@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="党建地图">
+      <map longitude="114.214401" latitude="22.684003" id="myapp" scale="17" markers="{{markers}}"></map>
+      <van-panel wx:for="{{msg}}" title="{{item.title}}" desc="{{item.desc}}" wx:key="id"></van-panel>
+    </van-tab>
+    <van-tab title="通知公告"></van-tab>
+    <van-tab title="主题党日"></van-tab>
+    <van-tab title="三会一课"></van-tab>
+  </van-tabs> 
+</view>

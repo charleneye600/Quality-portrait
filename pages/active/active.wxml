@@ -1,0 +1,15 @@
+<van-tabs type="card" class="mytab">
+	<van-tab title="义工活动">
+		<view>
+			<active-card wx:for="{{active1}}" title="{{item.title}}" src="{{item.src}}" url="{{item.url}}"></active-card>
+		</view>
+	</van-tab>
+	<van-tab title="党团活动">
+	<active-card wx:for="{{active2}}" title="{{item.title}}" src="{{item.src}}" url="{{item.url}}"></active-card>
+	</van-tab>
+	<van-tab title="往期回顾">
+  <view>
+			<active-card wx:for="{{active3}}" title="{{item.title}}" src="{{item.src}}" url="{{item.url}}"></active-card>
+		</view>
+  </van-tab>
+</van-tabs>

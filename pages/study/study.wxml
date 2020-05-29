@@ -1,0 +1,16 @@
+<!--pages/study/study.wxml-->
+<van-tabs active="{{active}}">
+  <van-tab title="中国特设社会主义理论体系">
+  <view>
+    <news-card wx:for="{{newList}}" title="{{item.title}}" src="{{item.src}}"></news-card>
+  </view>
+  </van-tab>
+  <van-tab title="习近平讲话">
+  </van-tab>
+  <van-tab title="党章党规">  
+  </van-tab>
+  <van-tab title="每日一学">  
+  </van-tab>
+</van-tabs> 
+
+

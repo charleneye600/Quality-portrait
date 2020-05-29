@@ -1,0 +1,10 @@
+/* pages/sanhuiyike/sanhuiyike.wxss */
+#title{
+  margin:80rpx;
+}
+.btnBox{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin:80rpx 0;
+}

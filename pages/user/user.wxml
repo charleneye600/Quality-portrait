@@ -1,0 +1,33 @@
+<!--pages/user/user.wxml-->
+  <view>
+    <image src="cloud://yym372958.7979-yym372958-1302138973/aa/dangyuan.jpg" id="user"></image>
+  </view>
+  <!-- 中间菜单栏 -->
+  <view class="nav">
+    <navigator wx:for="{{mune}}" url="{{item.url}}">
+        <view class="nav-item">
+          <view class="icon">
+            <image src="{{item.icon}}"></image>
+          </view>
+        </view>
+        <view class="title">
+        {{item.title}}
+        </view>
+    </navigator> 
+  </view>
+  <!-- 分数面板 -->
+  <view>
+  <van-tabs active="{{0}}">
+    <van-tab wx:for="{{score}}" title="{{item.name}}">
+       <van-cell-group>
+          <van-cell wx:for="{{item.group}}" wx:for-item='g'>
+          <!-- 使用插槽 -->
+          <text class="value">{{g.value}}</text>
+          <text slot="title" class="text">{{g.title}}</text>
+          </van-cell>
+      </van-cell-group>
+    </van-tab>
+  </van-tabs>
+  </view>
+
+

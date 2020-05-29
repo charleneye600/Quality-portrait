@@ -1,0 +1,12 @@
+<!--pages/socre/socre.wxml-->
+<view class="score-container" wx:for="{{menus}}">
+	<text class="menuTitle">{{item.menuName}}</text>
+	<view class="card-container">
+		<navigator class="card" wx:for="{{item.menuItem}}" wx:for-item="g" url="{{g.url}}">
+			<view class="img">
+				<image class="cardimg" src="{{g.icon}}"></image>
+			</view>
+			<view class="name">{{g.text}}</view>
+		</navigator>
+	</view>
+</view>

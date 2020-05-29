@@ -1,0 +1,7 @@
+<!--component/newCard/newCard.wxml-->
+ <view class="newCard" bind:tap="goTo">
+      <text class="title">{{title}}</text>
+      <view class="newImage">
+        <image src="{{src}}" mode="aspectFill" />
+      </view>
+ </view>

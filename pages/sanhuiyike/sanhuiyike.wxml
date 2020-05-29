@@ -1,0 +1,19 @@
+<!--pages/sanhuiyike/sanhuiyike.wxml-->
+<view>
+	<van-tag plain type="primary" id="title">三会一课</van-tag>
+	<van-cell-group>
+		<van-field value="{{username}}" label="用户名" placeholder="请输入用户名" bind:change="onChange" required></van-field>
+		<van-field value="{{time}}" label="时间" placeholder="请输入时间" bind:change="onTime" required bind:tap="showPopup"></van-field>
+		<van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+		<van-field value="{{location}}" label="地点" placeholder="请输入地点" bind:change="onLocationChange" required></van-field>
+		<van-field value="{{content}}" label="心得体会" placeholder="请输入心得体会" bind:change="onContentChange" required></van-field>
+		<van-uploader file-list="{fileList}" bind:after-read="afterRead" />
+	</van-cell-group>
+	<van-popup show="{{ show }}" position="bottom" custom-style="height: 50%" bind:close="showPopup">
+		<van-datetime-picker type="datetime" value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:input="onInput" bind:confirm="oncureentTime" bind:cancel="showPopup" />
+	</van-popup>
+
+	<view class="btnBox">
+		<van-button type="info" bindtap="save" class="btnbox">保存</van-button>
+	</view>
+</view>
