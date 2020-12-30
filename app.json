@@ -11,7 +11,9 @@
     "pages/sanhuiyike/sanhuiyike",
     "pages/web/web",
     "pages/activepage/activepage",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/dysign/dysign",
+    "pages/dysignlist/dysignlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

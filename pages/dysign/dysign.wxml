@@ -1,0 +1,23 @@
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="姓名"
+    placeholder="请输入姓名"
+    bind:click-icon="onClickIcon"
+    bindinput="getUsername"
+   
+  />
+
+  <van-field
+    value="{{ number }}"
+    type="number"
+    label="学号"
+    placeholder="请输入学号"
+    required
+    border="{{ false }}"
+    bindinput="getNumber"
+  />
+</van-cell-group>
+<van-button type="primary" class="active" bindtap="getSure">登录</van-button>

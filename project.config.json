@@ -3,7 +3,7 @@
 	"packOptions": {
 		"ignore": []
 	},
-	"cloudfunctionRoot": "./functions/",
+	"cloudfunctionRoot": "functions/",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -83,6 +83,21 @@
 					"id": -1,
 					"name": "pages/mine/mine",
 					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dysign/dysign",
+					"pathName": "pages/dysign/dysign",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dysignlist/dysignlist",
+					"pathName": "pages/dysignlist/dysignlist",
+					"query": "",
 					"scene": null
 				}
 			]

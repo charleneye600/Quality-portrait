@@ -1,0 +1,8 @@
+<view>
+	<van-cell-group wx:for="{{list}}">
+
+		<van-cell title="姓名" value="{{item.username}}" icon="manager" />
+		<van-cell title="学号" value="{{item.number}}" icon="card" />
+
+	</van-cell-group>
+</view>
